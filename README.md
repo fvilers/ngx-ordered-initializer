@@ -14,8 +14,8 @@ npm install ngx-ordered-initializer
 import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {
-  orderedAppInitializer,
   ORDERED_APP_INITIALIZER,
+  ORDERED_APP_PROVIDER,
 } from 'ngx-ordered-initializer';
 import { AppComponent } from './app.component';
 
@@ -33,16 +33,11 @@ import { AppComponent } from './app.component';
       useFactory: initializer2,
       multi: true,
     },
-    {
-      provide: APP_INITIALIZER,
-      useFactory: orderedAppInitializer,
-      deps: [ORDERED_APP_INITIALIZER],
-      multi: true,
-    },
+    ORDERED_APP_PROVIDER,
   ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
 ```
 
-The `orderedAppInitializer` factory will ensure that each initializer provided as `ORDERED_APP_INITIALIZER` will be executed in the declaration order.
+The `ORDERED_APP_PROVIDER` will ensure that each initializer provided as `ORDERED_APP_INITIALIZER` will be executed in the declaration order.

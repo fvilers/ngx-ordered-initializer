@@ -1,4 +1,4 @@
-import { InjectionToken } from "@angular/core";
+import { APP_INITIALIZER, InjectionToken } from "@angular/core";
 import { isPromise } from "./helpers";
 
 export const ORDERED_APP_INITIALIZER = new InjectionToken(
@@ -16,3 +16,10 @@ export function orderedAppInitializer(appInits: (() => any)[]) {
     }
   };
 }
+
+export const ORDERED_APP_PROVIDER = {
+  provide: APP_INITIALIZER,
+  useFactory: orderedAppInitializer,
+  deps: [ORDERED_APP_INITIALIZER],
+  multi: true,
+};
