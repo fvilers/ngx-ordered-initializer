@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "An Angular DI token that you can use to provide one or more initialization functions that will be executed in order",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/fvilers/ngx-ordered-initializer/issues"
   },
-  "homepage": "https://github.com/fvilers/ngx-ordered-initializer#readme"
+  "homepage": "https://github.com/fvilers/ngx-ordered-initializer#readme",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
 }
