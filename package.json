@@ -1,0 +1,23 @@
+{
+  "name": "ngx-ordered-initializer",
+  "version": "0.0.0",
+  "description": "An Angular DI token that you can use to provide one or more initialization functions that will be executed in order",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fvilers/ngx-ordered-initializer.git"
+  },
+  "keywords": [
+    "angular",
+    "dependency-injection",
+    "initializer"
+  ],
+  "author": "Fabian Vilers <fabian.vilers@dev-one.com> (https://www.dev-one.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fvilers/ngx-ordered-initializer/issues"
+  },
+  "homepage": "https://github.com/fvilers/ngx-ordered-initializer#readme"
+}
