@@ -41,3 +41,7 @@ export class AppModule {}
 ```
 
 The `ORDERED_APP_PROVIDER` will ensure that each initializer provided as `ORDERED_APP_INITIALIZER` will be executed in the declaration order.
+
+## Demo
+
+https://stackblitz.com/edit/ngx-ordered-initializer-demo
