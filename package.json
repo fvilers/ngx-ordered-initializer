@@ -2,6 +2,8 @@
   "name": "ngx-ordered-initializer",
   "version": "0.0.0",
   "description": "An Angular DI token that you can use to provide one or more initialization functions that will be executed in order",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
@@ -18,6 +20,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fvilers/ngx-ordered-initializer/issues"
+  },
+  "dependencies": {
+    "@angular/core": "^11.0.0",
+    "rxjs": "~6.6.0",
+    "zone.js": "~0.10.2"
   },
   "homepage": "https://github.com/fvilers/ngx-ordered-initializer#readme",
   "devDependencies": {
