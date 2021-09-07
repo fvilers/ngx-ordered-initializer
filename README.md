@@ -8,6 +8,11 @@ An Angular DI token that you can use to provide one or more initialization funct
 npm install ngx-ordered-initializer
 ```
 
+## Versions
+
+- Angular 11: 1.0.0
+- Angular 12: 2.0.0
+
 ## Usage
 
 ```
