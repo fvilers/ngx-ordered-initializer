@@ -1,6 +1,6 @@
 {
   "name": "ngx-ordered-initializer",
-  "version": "2.0.0",
+  "version": "4.0.0",
   "description": "An Angular DI token that you can use to provide one or more initialization functions that will be executed in order",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
