@@ -13,6 +13,7 @@ npm install ngx-ordered-initializer
 - Angular 11: 1.0.0
 - Angular 12: 2.0.0
 - Angular 14: 4.0.0
+- Angular 15: 5.0.0
 
 ## Usage
 
